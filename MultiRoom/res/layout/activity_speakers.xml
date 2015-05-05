@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <!-- 设备列表界面 -->
+    <!-- 标题栏 -->
+ <!--    <include layout="@layout/common_title_bar" /> -->
+
+    <Button
+        android:id="@+id/search_server_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickView"
+        android:text="搜索录音设备" />
+
+    <Button
+        android:id="@+id/set_music_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickView"
+        android:text="歌曲" />  
+
+    <Button
+        android:id="@+id/pick_player_btn"
+        android:onClick="clickView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="手机播放" >
+    </Button>
+ <!-- 列数 numColumns -->
+
+   <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:text="录音设备:"/>
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:columnWidth="40dp"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" >
+    </GridView>
+</LinearLayout>

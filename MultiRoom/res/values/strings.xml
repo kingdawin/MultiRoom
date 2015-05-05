@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">MultiRoomNew</string>
+
+    <string name="player_l">L</string>
+     <string name="player_r">R</string>
+</resources>

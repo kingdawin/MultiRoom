@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <include layout="@layout/common_title_bar" />
+    <!-- 歌曲列表 -->
+<!-- 
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="queryBufferSize"
+        android:text="测试协议" />
+
+    <Button
+        android:id="@+id/play_pause_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="playPause"
+        android:text="播放|暂停" /> -->
+    
+    <ListView
+        android:id="@+id/song_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/lightgray"
+        android:dividerHeight="2dp" />
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="可切换的声道" />
+
+    <Spinner
+        android:id="@+id/from_channel"
+        style="?android:attr/spinnerItemStyle"
+        android:layout_width="match_parent"
+        android:background="#000000"
+        android:layout_height="50dp" />
+
+    <Button
+        android:onClick="changeChannel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="切换声道" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/source_left_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="pickSourceChanelType"
+            android:text="播放声源左声道" />
+
+        <RadioButton
+            android:id="@+id/source_right_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="pickSourceChanelType"
+            android:text="播放声源右声道" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/play_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="playControl"
+            android:text="play" />
+
+        <Button
+            android:id="@+id/pause_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="playControl"
+            android:text="pause" />
+
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="playControl"
+            android:text="stop" />
+    </LinearLayout>
+
+</LinearLayout>
