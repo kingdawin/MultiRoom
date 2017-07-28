@@ -11,11 +11,11 @@ wifi play music
 分割得到的解码流->将分割的码流喂给socket发送
 
 # MediaCodec如何解码
-- MedieCodec支持4.1以上系统使用,是谷歌SDK的一个类
+- MedieCodec支持4.1以上系统使用
 - 能够对mp3,wma格式音频文件解码
 - 解码前，需要MediaExactor提取文件信息，包括文件类型，采样率
 
-
+```
 public class DecodeAudioDemo
 {
 	private static final String TAG = "DecodeAudioDemo";
@@ -230,3 +230,4 @@ public class DecodeAudioDemo
 			Log.e(TAG, "不支持 " + fileFormat + "格式文件!!!!");
 		}
 	}
+```
